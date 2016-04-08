@@ -13,7 +13,7 @@ import java.io.PrintStream;
 public  class Main {
     /**
      *
-     * @param arg .
+     * @param arg ' arg'
      */
     public static  void main(final String[] arg) {
         InputStream streaminput = System.in;
@@ -27,8 +27,6 @@ public  class Main {
                 return Integer.valueOf( str);
             }
         });*/
-        
-
 
 
         try {

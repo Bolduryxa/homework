@@ -27,7 +27,7 @@ public  class Main {
                 return Integer.valueOf( str);
             }
         });*/
-        //ConcolStream<Integer> stream = new ConcolStream<>(new IntegerHandler());
+        
 
 
 

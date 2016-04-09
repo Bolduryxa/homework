@@ -10,7 +10,7 @@ public class Array  <T> implements IArray<T> {
 
 
     private final static int defaultsize = 16;
-    private Object[] array;
+    private T[] array;
 
     /**
      *creating an array of size  'defaultsize'
@@ -34,14 +34,13 @@ public class Array  <T> implements IArray<T> {
      *increasing the size of the array
      * @param size 'size'
      */
-    private  void resize(final int size) {
+    private void resize(final int size) {
 
         if (size <= 0 || (array != null && array.length < size)) {
             throw new ArrayException();
         }
-
-        Object[] arr = new Object[size];
-
+        
+         T[] arr =(T[])(new Object[size]);
         if (array != null) {
 
             for (int i = 0; i < array.length; ++i) {

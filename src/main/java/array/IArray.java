@@ -20,11 +20,7 @@ public interface  IArray <T> {
       */
      void set(int index, T value);
 
-     /**
-      * set element
-      * JavaDoc
-      * @return size
-      */
+
     /**
      * get size
      * @return size

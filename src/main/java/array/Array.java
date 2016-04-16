@@ -9,16 +9,10 @@ import array.arrayecxeption.ArrayException;
 public class Array  <T> implements IArray<T> {
 
 
-    private final static int defaultsize = 16;
+   // private final static int defaultsize = 16;
     private T[] array;
 
-    /**
-     *creating an array of size  'defaultsize'
-     */
-    public Array() {
 
-        this(defaultsize);
-    }
 
     /**
      *creating an array of size 'size'
@@ -40,8 +34,8 @@ public class Array  <T> implements IArray<T> {
             throw new ArrayException();
         }
         
-         T[] arr =(T[])(new Object[size]);
-        if (array != null) {
+         T[] arr = (T[])(new Object[size]);
+         if (array != null) {
 
             for (int i = 0; i < array.length; ++i) {
                 arr[i] =  array[i];

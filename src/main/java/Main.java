@@ -1,5 +1,5 @@
 import array.IArray;
-import inputstream.ConcolStream;
+import inputstream.ConsolStream;
 import inputstream.ConsolStreamException;
 import invertmassiv.InvertMassiv;
 import outputstream.OutputStream;
@@ -20,8 +20,8 @@ public  class Main {
         PrintStream printStream = System.out;
 
 
-        ConcolStream<Integer> stream = new ConcolStream<>(Integer::valueOf);
-        /*ConcolStream<Integer> stream = new ConcolStream<>(new Handler<Integer>() {
+        ConsolStream<Integer> stream = new ConsolStream<>(Integer::valueOf);
+        /*ConsolStream<Integer> stream = new ConsolStream<>(new Handler<Integer>() {
             @Override
             public Integer valueOf(String str) {
                 return Integer.valueOf( str);

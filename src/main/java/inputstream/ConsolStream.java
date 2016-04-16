@@ -14,7 +14,7 @@ import java.util.Scanner;
 /**
  *@param <T>
  */
-public class ConcolStream<T> {
+public class ConsolStream<T> {
     /**
      *
      */
@@ -26,7 +26,7 @@ public class ConcolStream<T> {
      * @param handler ' handler'
      */
 
-    public ConcolStream(final Handler<T> handler) {
+    public ConsolStream(final Handler<T> handler) {
         this.handler = handler;
     }
 

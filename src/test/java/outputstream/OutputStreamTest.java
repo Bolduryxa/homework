@@ -1,12 +1,10 @@
+package outputstream;
 import array.Array;
 import array.IArray;
 import invertmassiv.InvertMassiv;
 import org.junit.Test;
-import outputstream.OutputStream;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
 import static org.junit.Assert.assertArrayEquals;
 
 /**
@@ -22,16 +20,13 @@ public class OutputStreamTest {
         int[] expected = {1, 2, 3};
         IArray<Integer> array = new Array<>(expected.length);
         InvertMassiv invertMassiv = new InvertMassiv();
-        for (int i = 0; i < expected.length; ++i)
+        for (int i = 0; i < expected.length; ++i) {
             array.set(i, expected[i]);
+        }
         invertMassiv.invert(array);
         ByteArrayOutputStream actual = new ByteArrayOutputStream();
         PrintStream pr = new PrintStream( actual);
         outputStream.outputstreaminconsol( pr, array);
         assertArrayEquals( string.getBytes(), actual.toByteArray());
-
   }
-
-
-
 }

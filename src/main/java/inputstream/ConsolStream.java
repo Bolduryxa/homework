@@ -1,6 +1,4 @@
 package inputstream;
-
-
 import array.IArray;
 import array.arrayecxeption.ArrayException;
 
